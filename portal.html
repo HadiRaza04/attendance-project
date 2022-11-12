@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <style>
         * {
             font-family: 'Times New Roman', Times, serif;
@@ -13,8 +14,6 @@
         .container-fluid>h1 {
             text-align: center;
         }
-
-       
         .modal_wrapper {
             position: fixed;
             left: 0;
@@ -117,12 +116,10 @@
     </style>
 </head>
 <body>
-
     <div class="container-fluid bg-success text-white">
         <h1 class="display-1">Students Portal</h1>
     </div>
-
-    <div class="container ">
+    <div class="container my-5">
         <table class="table my-3 table-hover ">
             <thead class="table-success">
                 <tr>
@@ -165,6 +162,7 @@
             </tbody>
         </table>
     </div>
+    <br>
     <div class="modal_wrapper">
         <div class="modal_container">
             <button class="close" id="closed">&times;</button>
@@ -178,8 +176,43 @@
             </div>
         </div>
     </div>
-
-
-    
+    <div class="container my-5">
+        <table class="table my-3 table-hover ">
+            <thead class="table-success">
+                <tr>
+                    <th class="h2">Instructor</th>
+                    <th class="h2">Days</th>
+                    <th class="h2">Timings</th>
+                    <th><button class="btn_purple" id="trigger">Add Slots</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sir M.Salman</td>
+                    <td>Tuesday, Thursday, Saturday</td>
+                    <td>07:00pm to 09:00pm</td>
+                    <td><Button class="btn btn-primary"><a href="courses/webDevelopment#">Edit Info</a></Button></td>
+                </tr>
+                <tr>
+                    <td>Sir Ghous Ahmed</td>
+                    <td>Monday, Wednesday, Friday</td>
+                    <td>09:00am to 11:00am</td>
+                    <td><Button class="btn btn-primary"><a href="courses/graphicDesign#">Edit Info</a></Button></td>
+                </tr>
+                <tr>
+                    <td>Sir Inzamam</td>
+                    <td>Monday, Wednesday, Friday</td>
+                    <td>09:00pm to 11:00pm</td>
+                    <td><Button class="btn btn-primary"><a href="courses/msOffice#">Edit Info</a></Button></td>
+                </tr>
+                <tr>
+                    <td>Sir Ishaq Bhojani</td>
+                    <td>Every Sunday</td>
+                    <td>02:00pm to 04:00pm</td>
+                    <td><Button class="btn btn-primary"><a href="courses/cca#">Edit Info</a></Button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

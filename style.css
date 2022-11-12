@@ -1,11 +1,11 @@
 .container {
-    background-image: linear-gradient(to right, rgb(10, 67, 173), rgb(7, 180, 248));
+    background-image: linear-gradient(to right, rgb(29, 173, 10), rgb(7, 248, 27));
     height: 90vh;
     margin-top: 8%;
     margin: auto;
     width: 42%;
-    border-right: 2px solid rgb(7, 180, 248);
-    border-left: 2px solid rgb(10, 67, 173);
+    border-right: 2px solid rgb(7, 248, 27);
+    border-left: 2px solid rgb(29, 173, 10);
     border-radius: 10px;
     box-shadow: rgba(4, 185, 240, 0.25) 0px 54px 55px, rgba(4, 185, 240, 0.12) 0px -12px 30px, rgba(4, 185, 240, 0.12) 0px 4px 6px, rgba(4, 185, 240, 0.17) 0px 12px 13px, rgba(4, 185, 240, 0.09) 0px -3px 5px;
 }
@@ -47,14 +47,14 @@ h1 {
     border-radius: 10px;
     box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
-    border: 2px solid rgb(7, 180, 248); 
+    border: 2px solid rgb(7, 248, 27); 
     /* animation-name: txtMove2;
     animation-duration: 0.5s; */
 }
 #signin::after {
     display: block;
     position: relative;
-    background: rgb(7, 180, 248);
+    background: rgb(7, 248, 27);
     content: "";
     position: absolute;
     top: 0;
@@ -115,8 +115,8 @@ input[type=email] {
     padding: 8px; 
 }
 input[type=email]:focus {
-    border-color: dodgerblue;
-    box-shadow: 0 0 8px 0 dodgerblue;
+    border-color: rgb(46, 250, 63);
+    box-shadow: 0 0 8px 0 rgb(46, 250, 73);;
 }
 .inputWithIcon1 input[type=email] {
     padding-left: 40px;
@@ -132,7 +132,7 @@ input[type=email]:focus {
     color: #aaa;
 }
 .inputWithIcon1 input[type=email]:focus + i{
-  color: dodgerblue;
+  color: rgb(46, 250, 73);
 }
 input[type=password] {
     width: 50%;
@@ -145,8 +145,8 @@ input[type=password] {
     padding: 8px; 
 }
 input[type=password]:focus {
-    border-color: dodgerblue;
-    box-shadow: 0 0 8px 0 dodgerblue;
+    border-color: rgb(46, 250, 63);
+    box-shadow: 0 0 8px 0 rgb(46, 250, 63);
 }
 .inputWithIcon2 input[type=password] {
     padding-left: 40px;
@@ -162,5 +162,16 @@ input[type=password]:focus {
     color: #aaa;
 }
 .inputWithIcon2 input[type=password]:focus + i{
-  color: dodgerblue;
+  color: rgb(46, 250, 63);
+}
+button>a {
+    display: block;
+    text-decoration: none;
+    width: 130px;
+    height: 20px;
+    margin: 0px;  
+}
+button>a:hover {
+    text-decoration: none;
+    color: #eee;
 }

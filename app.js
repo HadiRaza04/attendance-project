@@ -1,3 +1,19 @@
+var userName = document.getElementById("namee").value;
+var password = document.getElementById("passcode").value;
+
+function login() {
+    if(userName == "admin123" && password == 123456 ) {
+        // alert ("Login successfully");
+        window.location = "portal.html"; // Redirecting to other page.
+        return false;
+    } 
+    else {
+        alert("Login failed")
+    }
+}
+export default login;
+
+
 const trigger = document.querySelector('#trigger');
 const modalWrapper = document.querySelector('.modal_wrapper');
 const close = document.querySelector('#closed');
@@ -13,21 +29,10 @@ btn_purple2.addEventListener('click', function(){
     alert('LogIn successfully');    
 });
 
-
-
 // var hidediv = document.getElementById("hideshow");
-var email = document.getElementsByTagName(input[type="email"]).value;
-var password = document.getElementsByTagName(input[type="password"]).value;
-console.log(password)
-
-
-
-
-
-function signup() {
-    
-}
-
+// var email = document.getElementsByTagName(input[type="email"]).value;
+// var password = document.getElementsByTagName(input[type="password"]).value;
+// console.log(password)
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
@@ -48,6 +53,3 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-
-
-
